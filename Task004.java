@@ -1,3 +1,7 @@
+/*
+ * Выбросит Exception, когда пользователь вводит пустую строку. Пользователю должно показаться сообщение, что пустые строки вводить нельзя.
+ */
+
 import java.util.Scanner;
 
 public class Task004 {
@@ -15,7 +19,7 @@ public class Task004 {
                 if (str.length() == 0) throw new Exception();
                 break;
             } catch (Exception e) {
-                System.out.println("Строка пустая. ");
+                System.out.println("Пустые строки вводить нельзя. ");
             }
         }
     }
